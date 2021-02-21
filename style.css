@@ -1,11 +1,119 @@
 /* CSS files add styling rules to your content */
+* {
+  box-sizing: border-box;
+}
+
+.button {
+  border: none;
+  border-radius:4px;
+  box-shadow: 0 9px #999;
+  background: #a6cae8; color: white;
+  padding: 16px 32px;
+  text-align: center;
+  margin-top:180px;
+  font-weight: 700;
+  font-style: italic;
+  font-size: 36px;
+  font-family: helvetica neue;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 9px #  box-shadow: 0 9px #5A5559;#a6cae8;
+}
+
+.button:hover {
+  background-color: #B89DB1;
+  box-shadow: 0 7.342px #5A5559;
+  transform: translateY(1.618px);
+}
+
+.button:active {
+  background-color: #554847;
+  box-shadow: 0 5px #222;
+  transform: translateY(4px);
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+arrow{
+    bottom: 360px;
+    right: 36px;
+}
+
+foot{
+    position: absolute;
+    bottom: 36px;
+    right: 36px;
+    text-align: right;
+    font-family: 'Libre Barcode 128 Text', cursive;
+    font-size: 16px;
+}
+
+header{
+    text-align: center;
+    
+}
 
 body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+  text-align: center;
+  color: #bbb8d2;
+  font-family: helvetica neue;
+  margin-top: 216px;
+  line-height: 1.5em;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+  margin-top: 72px;
+  font-size: 72px;
+  text-align: center;
+  color: #ffffff;
+  font-family: helvetica neue;
+}
+
+form {
+  background-color: #eee;
+  display: grid;
+  grid-gap: 1em;
+  padding: 1em;
+  max-width: 40ch;
+}
+
+input {
+  border: 1px solid silver;
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+form button {
+  background-color: #bbbbf2;
+  border: 2px solid currentColor;
+  border-radius: .25em;
+  cursor: pointer;
+  font-size: inherit;
+  line-height: 1.4em;
+  padding: 0.25em 1em;
+  max-width: 20ch;
+}
+
+form button:hover {
+  background-color: lavender;
+}
+
+footer {
+  margin-top: 3em;
+  padding-top: 1.5em;
+  border-top: 1px solid lightgrey;
 }
